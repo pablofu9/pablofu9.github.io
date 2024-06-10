@@ -2590,13 +2590,13 @@ input, select, textarea {
 }
 
 .image-item {
-	flex: 1 1 calc(30% - 15px); /* Adjusted to make images slightly smaller */
+	flex: 1 1 calc(40% - 20px); /* Adjusted to make images slightly smaller */
 	box-sizing: border-box;
 }
 
 .image-item img {
-	width: 50%;
-	height: 50%;
+	width: 75%;
+	height: 75%;
 	display: block;
 }
 
