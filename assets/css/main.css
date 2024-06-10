@@ -2587,8 +2587,8 @@ input, select, textarea {
 }
 
 .image-item img {
-    width: 100%; /* Ancho completo del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 75%; /* Ancho completo del contenedor */
+    height: 75%; /* Altura automática para mantener la proporción */
     display: block;
     border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
 }
