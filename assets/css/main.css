@@ -70,6 +70,14 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+.image {
+  width: 100%; /* Make sure it takes up the full width of the parent */
+  height: auto; /* Adjust height accordingly */
+  display: flex; /* Center the image */
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
+}
+
 
 /* Basic */
 
