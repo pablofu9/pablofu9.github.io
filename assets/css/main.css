@@ -2576,20 +2576,23 @@ input, select, textarea {
 }
 /* Image grid styles */
 .image-grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 25px; /* Increased space between images */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Espacio entre imágenes */
 }
 
 .image-item {
-	box-sizing: border-box;
+    flex: 1 1 calc(50% - 12.5px); /* Dos imágenes por fila con espacio entre ellas */
+    box-sizing: border-box;
 }
 
 .image-item img {
-	width: 115%;
-	height: 115;
-	display: block;
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block;
+    border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
 }
+
 
 	
 
