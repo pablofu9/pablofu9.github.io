@@ -2573,22 +2573,25 @@ input, select, textarea {
     border-radius: 50%; /* Esto hace que la imagen sea circular */
     object-fit: cover; /* Esto asegura que la imagen se recorte para llenar el contenedor circular */
     margin-bottom: 20px; /* Espacio debajo de la imagen para separar el título */
+    border: 2px solid purple; /* Agrega un borde morado de 2px de ancho */
 }
+
 /* Image grid styles */
 .image-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan en múltiples filas */
     gap: 25px; /* Espacio entre imágenes */
+    overflow-x: auto; /* Agrega desplazamiento horizontal para el caso de que haya más de tres imágenes */
 }
 
 .image-item {
-    flex: 1 1 calc(33.333% - 25px); /* Tres imágenes por fila con espacio entre ellas */
+    flex: 0 0 auto; /* Establece el ancho automático para cada imagen */
     box-sizing: border-box;
 }
 
 .image-item img {
-    width: 75%; /* Ancho completo del contenedor */
-    height: 75%; /* Altura automática para mantener la proporción */
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
     display: block;
     border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
 }
