@@ -2582,7 +2582,7 @@ input, select, textarea {
 }
 
 .image-item {
-    flex: 1 1 calc(50% - 12.5px); /* Dos imágenes por fila con espacio entre ellas */
+    flex: 1 1 calc(33.333% - 25px); /* Tres imágenes por fila con espacio entre ellas */
     box-sizing: border-box;
 }
 
@@ -2592,6 +2592,7 @@ input, select, textarea {
     display: block;
     border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
 }
+
 
 
 	
