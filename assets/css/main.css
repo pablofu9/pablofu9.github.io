@@ -2586,8 +2586,8 @@ input, select, textarea {
 }
 
 .image-item img {
-	width: 75%;
-	height: 75%;
+	width: 115%;
+	height: 115;
 	display: block;
 }
 
