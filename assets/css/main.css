@@ -31,6 +31,14 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+.profile-photo {
+    width: 100px; /* Ajusta el tamaño según tus preferencias */
+    height: 100px; /* Asegúrate de que la altura y el ancho sean iguales para que sea circular */
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    object-fit: cover; /* Esto asegura que la imagen se recorte para llenar el contenedor circular */
+    margin-bottom: 20px; /* Espacio debajo de la imagen para separar el título */
+}
 /* Image grid styles */
 .image-grid {
 	display: flex;
