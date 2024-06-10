@@ -35,17 +35,17 @@ body {
 .image-grid {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px; /* Space between images */
+	gap: 25px; /* Increased space between images */
 }
 
 .image-item {
-	flex: 1 1 calc(33.333% - 10px); /* Three images per row */
+	flex: 1 1 calc(30% - 15px); /* Adjusted to make images slightly smaller */
 	box-sizing: border-box;
 }
 
 .image-item img {
-	width: 100%;
-	height: auto;
+	width: 50%;
+	height: 50%;
 	display: block;
 }
 
