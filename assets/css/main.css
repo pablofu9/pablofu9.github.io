@@ -116,14 +116,6 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-		image {
- width: 150px;
-				    height: 150px;
-				    border-radius: 50%; /* Hace que la imagen tenga forma circular */
-				    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
-				    margin-right: 20px; /* Espacio entre la imagen y el texto */
-				    float: left; 
-		}
 
 /* Type */
 
@@ -2590,7 +2582,6 @@ input, select, textarea {
 }
 
 .image-item {
-	flex: 1 1 calc(40% - 20px); /* Adjusted to make images slightly smaller */
 	box-sizing: border-box;
 }
 
