@@ -31,6 +31,20 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+ .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Espacio entre las imágenes */
+        }
+        .image-item {
+            flex: 1 1 calc(33.333% - 10px); /* Tres imágenes por fila */
+            box-sizing: border-box;
+        }
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
 ol, ul {
 	list-style: none;
