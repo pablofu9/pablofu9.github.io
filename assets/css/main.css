@@ -2580,7 +2580,7 @@ input, select, textarea {
 .image-grid {
     display: flex;
     flex-wrap: nowrap; /* Evita que las imágenes se envuelvan en múltiples filas */
-    gap: 25px; /* Espacio entre imágenes */
+    gap: 10px; /* Espacio entre imágenes */
     overflow-x: auto; /* Agrega desplazamiento horizontal para el caso de que haya más de tres imágenes */
 }
 
@@ -2590,14 +2590,14 @@ input, select, textarea {
 }
 
 .image-item img {
-    width: 50%; /* Ancho completo del contenedor */
+    width: 25%; /* Ancho completo del contenedor */
     height: auto; /* Altura automática para mantener la proporción */
     display: block;
     border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
 }
 
 .image-column {
-  width: 50%; /* Ancho completo del contenedor */
+  width: 25%; /* Ancho completo del contenedor */
   height: auto; 
   object-fit: cover;
 }
