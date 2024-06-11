@@ -2576,21 +2576,38 @@ input, select, textarea {
 }
 
 /* Image grid styles */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.gallery__img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 /* Create four equal columns that sits next to each other */
 
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 60%;
-  height: auto;
-}
 
 
 @media screen and (max-width: 800px) {
