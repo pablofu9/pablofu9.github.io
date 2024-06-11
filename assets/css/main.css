@@ -2687,16 +2687,16 @@ input[type="radio"]+label:before {
 
 
 
-  
+
 .profile-info {
 	display: flex;
-	align-items: center; 
+	align-items: center;
 	flex-direction: column;
 	margin-bottom: 20px;
 	/* Alinea verticalmente los elementos */
-  }
-  
-  .profile-photo {
+}
+
+.profile-photo {
 	margin-right: 20px;
 	width: 150px;
 	/* Ajusta el tamaño según tus preferencias */
@@ -2708,20 +2708,22 @@ input[type="radio"]+label:before {
 	margin-bottom: 20px;
 	/* Espacio debajo de la imagen para separar el título */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	
 	/* Agrega una sombra */
 	margin-right: 40px;
- /* Añade un margen a la derecha de la imagen */
-  }
-  
-  .profile-info h1 {
-	margin-right: 20px; /* Añade un margen a la derecha del h1 */
-  }
-  
-  .profile-info h2 {
+	/* Añade un margen a la derecha de la imagen */
+}
+
+.profile-info h1 {
+	margin-right: 20px;
+	/* Añade un margen a la derecha del h1 */
+}
+
+.profile-info h2 {
 	margin-top: -15px;
-	 /* Añade un margen superior al h2 */
-  }
-  
+	/* Añade un margen superior al h2 */
+}
+
 
 
 /* Image grid styles */
@@ -2756,14 +2758,39 @@ input[type="radio"]+label:before {
 .profile-icon {
 	width: 40px;
 	height: 40px;
-	text-decoration: none; /* Elimina cualquier línea decorativa */
+	text-decoration: none;
+	background: none;
+	transition: ease .3s;
+	cursor: pointer;
+	/* Elimina cualquier línea decorativa */
 }
-.profile-icons a {
-	text-decoration: none; /* Elimina cualquier línea decorativa */
-	border: none; /* Elimina cualquier borde alrededor del enlace */
-	outline: none; /* Elimina cualquier contorno alrededor del enlace */
-	
+
+.profile-icon:hover {
+	width: 50px;
+	height: 50px;
+	filter: invert(50%) sepia(100%) hue-rotate(290deg) saturate(500%);
+
+}
+.card-container {
+	display: flex; /* Utiliza flexbox para el contenedor de tarjetas */
+	justify-content: center; /* Centra las tarjetas horizontalmente */
   }
+
+.card {
+  flex: 0 0 auto; /* Permite que las tarjetas mantengan su tamaño original */
+  margin-right: 10px; /* Añade un margen entre las tarjetas */
+}
+
+
+.profile-icons a {
+	text-decoration: none;
+	/* Elimina cualquier línea decorativa */
+	border: none;
+	/* Elimina cualquier borde alrededor del enlace */
+	outline: none;
+	/* Elimina cualquier contorno alrededor del enlace */
+
+}
 
 
 /* Adjust image-column specifically */
@@ -2775,8 +2802,16 @@ input[type="radio"]+label:before {
 
 }
 
-#profile {display:inline-block;margin-right:10px;} 
-#headerName {display:inline-block; margin-bottom: 100px;} 
+#profile {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#headerName {
+	display: inline-block;
+	margin-bottom: 100px;
+}
+
 /* Create four equal columns that sits next to each other */
 
 /* styles.css */
@@ -3210,9 +3245,9 @@ body.is-ie .spotlights>section {
 	background-position: center center;
 	background-size: cover;
 	border-radius: 0;
-	display: block;
+	display: flex;
 	position: relative;
-	width: 25em;
+	width: 20em;
 }
 
 .spotlights>section>.image img {
@@ -3308,7 +3343,7 @@ body.is-preload .spotlights>section>.content>.inner {
 	}
 
 	.spotlights>section>.content {
-		width: 100%;
+		width: 20%;
 	}
 
 	.spotlights>section.inactive>.content>.inner,
