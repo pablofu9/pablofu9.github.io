@@ -2573,7 +2573,7 @@ input, select, textarea {
     border-radius: 50%; /* Esto hace que la imagen sea circular */
     object-fit: cover; /* Esto asegura que la imagen se recorte para llenar el contenedor circular */
     margin-bottom: 20px; /* Espacio debajo de la imagen para separar el título */
-    border: 2px solid red; /* Agrega un borde morado de 2px de ancho */
+    border: 2px solid purple; /* Agrega un borde morado de 2px de ancho */
 }
 
 /* Image grid styles */
@@ -2590,7 +2590,7 @@ input, select, textarea {
 }
 
 .image-item img {
-    width: 100%; /* Ancho completo del contenedor */
+    width: 50%; /* Ancho completo del contenedor */
     height: auto; /* Altura automática para mantener la proporción */
     display: block;
     border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
