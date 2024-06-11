@@ -2576,30 +2576,23 @@ input, select, textarea {
 }
 
 /* Image grid styles */
-.image-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 5px; /* Reducir el espacio entre imágenes */
-    overflow-x: auto;
-    margin: 0; /* Eliminar el margen para evitar espacios adicionales */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.image-item {
-    flex: 0 0 auto;
-    box-sizing: border-box;
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-.image-item img {
-    max-width: 50%; /* Limita el ancho máximo de las imágenes al 100% del contenedor */
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
-
-
-.image-column {
-
-  object-fit: contain;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 
