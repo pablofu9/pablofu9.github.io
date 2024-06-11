@@ -2597,9 +2597,8 @@ input, select, textarea {
 }
 
 .image-column {
-  width: 25%; /* Ancho completo del contenedor */
-  height: auto; 
-  object-fit: cover;
+
+  object-fit: contain;
 }
 
 
