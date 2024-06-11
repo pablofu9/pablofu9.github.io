@@ -2579,9 +2579,10 @@ input, select, textarea {
 /* Image grid styles */
 .image-grid {
     display: flex;
-    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan en múltiples filas */
-    gap: 10px; /* Espacio entre imágenes */
-    overflow-x: auto; /* Agrega desplazamiento horizontal para el caso de que haya más de tres imágenes */
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    margin: 0 -5px; /* Ajusta el margen para reducir el espacio entre las columnas */
 }
 
 .image-item {
