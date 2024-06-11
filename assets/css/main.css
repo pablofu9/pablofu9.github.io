@@ -2596,6 +2596,12 @@ input, select, textarea {
     border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
 }
 
+.image-column {
+  width: 50%; /* Ancho completo del contenedor */
+  height: auto; 
+  object-fit: cover;
+}
+
 
 
 	
