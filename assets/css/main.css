@@ -2580,22 +2580,23 @@ input, select, textarea {
 .image-grid {
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 5px; /* Reducir el espacio entre imágenes */
     overflow-x: auto;
-    margin: 0 -5px; /* Ajusta el margen para reducir el espacio entre las columnas */
+    margin: 0; /* Eliminar el margen para evitar espacios adicionales */
 }
 
 .image-item {
-    flex: 0 0 auto; /* Establece el ancho automático para cada imagen */
+    flex: 0 0 auto;
     box-sizing: border-box;
 }
 
 .image-item img {
-    width: 25%; /* Ancho completo del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 100%; /* Limita el ancho máximo de las imágenes al 100% del contenedor */
+    height: auto;
     display: block;
-    border-radius: 10px; /* Opcional: añade bordes redondeados para estética */
+    border-radius: 10px;
 }
+
 
 .image-column {
 
