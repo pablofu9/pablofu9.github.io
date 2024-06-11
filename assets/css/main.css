@@ -2583,20 +2583,22 @@ input, select, textarea {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
+
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-  width: 100%;
+  width: 60%;
+  height: auto;
 }
 
 
-
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 	
 
 /* List */
